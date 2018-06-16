@@ -1,0 +1,376 @@
+ :root{
+   --purple-bg-color: #9a99ff;
+   --blue-bg-color: #ccffff;
+   --border-bottom: 1px solid black;
+   }
+body,html{
+  font-family: "helvetica", sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  margin:0;
+
+}
+header{
+  z-index: 0;
+}
+
+.container_top{
+  background-color: var(--blue-bg-color);
+  height: 650px;
+  width: 100%;
+  border-bottom: var(--border-bottom);
+  margin: 0 auto;
+}
+.social__icon{
+  margin-left: 17%;
+  padding: 10px 0px 5px 5px;
+}
+.banniere{
+  z-index: 50;
+  height: 150px;
+  background-color: var(--purple-bg-color);
+  border-top: var(--border-bottom);
+  border-bottom: var(--border-bottom);
+}
+.logo h1{
+margin-left: 170px;
+}
+nav {
+  display: flex;
+  justify-content:space-around;
+  margin-right: 250px;
+  flex-wrap: wrap;
+}
+.menu {
+  padding:0;
+  margin: 0;
+  display: flex;
+}
+.submenu{
+  margin-top: 65px;
+}
+.menu li:hover > ul{
+	display: block;
+}
+.arrow{
+  font-size: 22px;
+  color: black!important;
+  transform:rotate(45deg);
+}
+.menu .submenu_desti{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: 900px;
+    z-index: 99999;
+    background: #cccccc;
+    border-radius: 5px;
+}
+.menu .submenu_book{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 145px;
+    left: 800px;
+    z-index: 99999;
+    background: #cccccc;
+    border-radius: 5px;
+}
+
+.menu ul ul{
+  top: 50px;
+  margin-left:150px;
+}
+.menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-bottom: var(--border-bottom);
+}
+.menu ul li:last-child{
+    box-shadow: none;
+}
+.menu ul a{
+    padding: 10px;
+  	height: 10px;
+  	width: 100px;
+  	height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+  	text-transform: none;
+}
+.menu ul a:hover{
+    background: #f5f5f5;
+    color: red;
+}
+
+nav ul li  {
+  margin-left:  1rem;
+  list-style: none;
+  margin-top:72px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 2px;
+}
+/*  Carrousel a integrer ***/
+.slideshow{
+  position:relative;
+  width: 840px;
+  height: 310px;
+  padding: 15px;
+  margin: 0 260px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.slideshow:before,
+.slideshow:after{
+  position: absolute;;
+  bottom: 16px;
+  z-index: -10;
+  width: 50%;
+  height: 20px;
+  background: rgba(0,0,0,0.1);
+}
+.slideshow:before{
+  left: 0;
+  transform: rotate(-4deg);
+}
+.slideshow:after{
+  right: 0;
+  transform: rotate(4deg);
+}
+
+.slideshow .container_slider {
+  position: relative;
+  width: 840px;
+  height: 310px;
+  overflow: hidden;
+}
+.slideshow .container_slider:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background:#999;
+}
+.slideshow .slider{
+  animation: slider 9s infinite; /* time slide from keyframes*/
+  position:absolute;
+  left: 0;
+  top:0;
+  width: 800%;
+  height: 310px;
+}
+.slider img {
+  width:840px;
+  height: 310px;
+}
+.slideshow figure{
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.slideshow figure:after{
+  position:absolute;
+  display: bock;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
+/** animation pour slider */
+@keyframes slider {
+  0%, 20%, 100% {left:0}
+  25%, 45%      {left: -100%}
+  50%, 70%      {left: -200%}
+  75%, 95%      {left: -300%}
+  125%, 145%    {left: -400%}
+  165%, 185%    {left: -500%}
+  /* 205%, 225%    {left: -600%}
+  224%, 265%    {left: -700%} */
+  }
+
+/*** FIN du HEADER **/
+/* Container middle */
+
+.container_middle{
+    height: 780px;
+    margin: 0 auto;
+    border-bottom: var(--border-bottom);
+}
+.container__box{
+  display:grid;
+  padding-top: 50px;
+  grid-template-columns: 19% 19% 19%;
+  grid-gap:30px;
+  justify-content: center;
+}
+.container__box .box1, .box2, .box3{
+  background-color:var(--purple-bg-color);
+  height: 130px;
+
+}
+
+ .container__box .in__box1{
+  display: grid;
+  grid-template-columns: 31% 69%;
+}
+.container__box .in__box2 {
+  display: grid;
+  grid-template-columns: 36% 69%;
+}
+.container__box .in__box3 {
+  display: grid;
+  grid-template-columns: 31% 69%;
+}
+
+.container_middle .container__box div .icone-fire, .icone-teepee, .icone-patte {
+  padding: 20px 15px 10px 5px;
+  display: grid;
+}
+
+h2{
+  font-size: 15px;
+  display: grid;
+  color: white;
+  padding-top: 10px;
+}
+
+.container__txt div .texte{
+  margin-top: -14px;
+  font-size: 14px;
+  width: 277px;
+  justify-content: center;
+  color :grey;
+  text-align: justify;
+}
+span{
+  color: red;
+  padding-top: 10px;
+}
+
+.container__flag{
+  display: grid;
+  margin-top:210px;
+  grid-template-areas:
+  "titre titre titre"
+  "france bresil algerie";
+}
+.titre_desti{
+  grid-area: titre;
+}
+.titre_desti hr {
+  margin-right: 33px;
+  margin-bottom: 15px;
+}
+.flag1{grid-area: france;
+  }
+.flag2{
+  grid-area: bresil;
+}
+.flag3{
+  grid-area: algerie;
+}
+.france, .bresil, .algerie {
+  border: 0.5px solid grey;
+  padding: 2.5px;
+  margin-right:30px;
+}
+.first{
+  margin-left:20%;
+  margin-right: 20%;
+}
+.container_bottom{
+  height: 800px;
+  background-color: var(--blue-bg-color);
+  display: grid;
+  border-bottom: var(--border-bottom);
+}
+.content__bottom{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 287px;
+  padding-right: 150px;
+  margin-top:-160px;
+  grid-gap: 20px;
+  grid-template-areas:
+  "about why_us"
+  "about why_us"
+  "travel travel";
+}
+.about{
+  grid-area: about;
+  display: grid;
+  margin-top: 50px;
+  margin-bottom:100px;
+}
+.why_us{
+  grid-area: why_us;
+  display: grid;
+  margin-bottom: 57px;
+  margin-top: -10px;
+}
+div .hr2 {
+  margin-right: 155px;
+  margin-top: -20px;
+}
+ .why_us h4 {
+   margin-bottom: 36px;
+}
+.one, .two, .three {
+  display: grid;
+  margin-right: 50px;
+  grid-template-columns: 20% 59%;
+}
+.one, .two, .three img{
+  align-items:center;
+}
+.travel{
+  grid-area: travel;
+  margin-top: -304px;
+  padding-right: 120px;
+}
+.travel p {
+}
+button{
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+
+footer{
+
+  height: 130px;
+  background-color: var(--purple-bg-color);
+}
+footer ul.nav-foot {
+  display: flex;
+  margin-left: 286px;
+}
+.p-footer{
+  margin-left: 326px;
+  margin-top: 20px;
+  color: grey;
+}
+footer ul li{
+  list-style: none;
+  padding-top: 65px;
+  padding-right: 45px;
+}
