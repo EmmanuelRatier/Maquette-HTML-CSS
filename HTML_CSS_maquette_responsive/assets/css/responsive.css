@@ -219,9 +219,9 @@ height: 310px;
     }
     .container_bottom{
     height: 1500px;
-    background-color: var(--blue-bg-color);
+    background-color: #ccffff;
     display: grid;
-    border-bottom: var(--border-bottom);
+    border-bottom:1px solid black;
     }
   }
   @media only screen and (max-width:700px){
@@ -329,7 +329,7 @@ margin-bottom:-25px;
   }
     .container_bottom{
     height: 1800px;
-    background-color: var(--blue-bg-color);
+    background-color: #ccffff;
   }
   .logo h1{
   margin-left: 130px;
