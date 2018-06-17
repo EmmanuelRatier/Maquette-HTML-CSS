@@ -283,6 +283,10 @@ nav ul li a {
   color: black;
   padding: 5px 2px;
 }
+.slider img {
+  width:600px;
+  height: 310px;
+}
   }
 @media only screen and (max-width:530px){
   .logo h1 img{

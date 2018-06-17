@@ -1,8 +1,4 @@
- :root{
-   --purple-bg-color: #9a99ff;
-   --blue-bg-color: #ccffff;
-   --border-bottom: 1px solid black;
-   }
+
 body,html{
   font-family: "helvetica", sans-serif;
 }
@@ -19,10 +15,10 @@ header{
 }
 
 .container_top{
-  background-color: var(--blue-bg-color);
+  background-color:#ccffff;
   height: 650px;
   width: 100%;
-  border-bottom: var(--border-bottom);
+  border-bottom: 1px solid black;
   margin: 0 auto;
 }
 .social__icon{
@@ -32,9 +28,9 @@ header{
 .banniere{
   z-index: 50;
   height: 150px;
-  background-color: var(--purple-bg-color);
-  border-top: var(--border-bottom);
-  border-bottom: var(--border-bottom);
+  background-color: #9a99ff;
+  border-top:1px solid black;
+  border-bottom: 1px solid black;
 }
 .logo h1{
 margin-left: 170px;
@@ -95,7 +91,7 @@ nav {
     margin: 0;
     padding: 0;
     display: block;
-    border-bottom: var(--border-bottom);
+    border-bottom: 1px solid black;
 }
 .menu ul li:last-child{
     box-shadow: none;
@@ -188,31 +184,19 @@ nav ul li a {
 }
 .slideshow figure:after{
   position:absolute;
-  display: bock;
+  display: block;
   top:0;
   left: 0;
   width: 100%;
   height:100%;
 }
-/** animation pour slider */
-@keyframes slider {
-  0%, 20%, 100% {left:0}
-  25%, 45%      {left: -100%}
-  50%, 70%      {left: -200%}
-  75%, 95%      {left: -300%}
-  125%, 145%    {left: -400%}
-  165%, 185%    {left: -500%}
-  /* 205%, 225%    {left: -600%}
-  224%, 265%    {left: -700%} */
-  }
 
-/*** FIN du HEADER **/
-/* Container middle */
+
 
 .container_middle{
     height: 780px;
     margin: 0 auto;
-    border-bottom: var(--border-bottom);
+    border-bottom:1px solid black;
 }
 .container__box{
   display:grid;
@@ -222,7 +206,7 @@ nav ul li a {
   justify-content: center;
 }
 .container__box .box1, .box2, .box3{
-  background-color:var(--purple-bg-color);
+  background-color:#9a99ff;
   height: 130px;
 
 }
@@ -298,9 +282,9 @@ span{
 }
 .container_bottom{
   height: 800px;
-  background-color: var(--blue-bg-color);
+  background-color: #ccffff;
   display: grid;
-  border-bottom: var(--border-bottom);
+  border-bottom:1px solid black;
 }
 .content__bottom{
   display: grid;
@@ -358,7 +342,7 @@ button{
 footer{
 
   height: 130px;
-  background-color: var(--purple-bg-color);
+  background-color:#9a99ff;
 }
 footer ul.nav-foot {
   display: flex;
