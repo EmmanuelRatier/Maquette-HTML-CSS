@@ -355,6 +355,11 @@ footer ul.nav-foot {
 }
 footer ul li{
   list-style: none;
-  padding-top: 65px;
-  padding-right: 45px;
+  margin-top: 4em;
+  margin-left: 0.4em;
+  padding-right: 1em;
+}
+.copy p {
+  padding-top: 3.6em;
+  text-align: center;
 }
